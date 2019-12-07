@@ -6,3 +6,23 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.header h1{
+  font-size: 20px;
+  background-color: darkgray;
+  width: 100%;
+}
+
+.leftmenu{
+  background-color: gray;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main{
+  background-color: red;
+  min-width: 100%;
+  min-height: 100%;
+}
