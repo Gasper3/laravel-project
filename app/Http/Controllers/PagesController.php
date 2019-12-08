@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PagesController extends Controller
 {
@@ -11,14 +12,11 @@ class PagesController extends Controller
       return view('welcome');
     }
 
-    public function articles()
-    {
-      return view('articles');
-    }
 
     public function login()
     {
       return view('login');
     }
+
 
 }

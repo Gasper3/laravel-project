@@ -15,4 +15,8 @@ Route::get('/', 'PagesController@homepage');
 
 Route::get('/login', 'PagesController@login');
 
-Route::get('/articles', 'PagesController@articles');
+Route::get('/articles', 'ArticlesController@articles');
+
+Route::get('/articles/create', 'ArticlesController@createArticle');
+
+Route::post('/articles', 'ArticlesController@articleStore');
