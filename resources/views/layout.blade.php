@@ -14,14 +14,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/articles">Articels</a>
+            <a class="nav-item nav-link" href="/articles">Articles</a>
             <a class="nav-item nav-link" href="/login">Sign in</a>
           </div>
         </div>
       </nav>
     </div>
   </div>
-  <div class="container">
+  <div class="container mt-3">
     @yield('content')
   </div>
 

@@ -8,30 +8,49 @@ use App\article;
 
 class ArticlesController extends Controller
 {
-  public function articles()
+  public function index()
   {
     $articles = article::all();
 
-    return view('articles', [
+    return view('welcome', [
       'articles'=>$articles
     ]);
   }
 
-  public function createArticle()
+  public function create()
   {
     return view('articles.create');
   }
 
-  public function articleStore()
+  public function store()
   {
-    $article = new article();
+    Article::create(request(['headline', 'content', 'author']));
+    return redirect('/articles');
+  }
+
+  public function edit(Article $article)
+  {
+    return view('articles.edit', compact('article'));
+  }
+
+  public function update(Article $article)
+  {
     $article->headline = request('headline');
     $article->content = request('content');
-    $article->author = request('author');
     $article->save();
 
     return redirect('/articles');
   }
 
+  public function destroy(Article $article)
+  {
+    $article->delete();
+    return redirect('/articles');
+  }
+
+  public function show(Article $article)
+  {
+    return view('articles.show', compact('article'));
+  }
 
 }
