@@ -11376,3 +11376,11 @@ a.text-dark:focus {
   min-height: 100%;
 }
 
+.article-container {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+

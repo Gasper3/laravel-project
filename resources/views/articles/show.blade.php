@@ -1,5 +1,4 @@
 @extends('layout')
-
 @section('content')
 <h1>{{$article->headline}}</h1>
 <div class="">

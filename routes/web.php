@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'ArticlesController@index');
+Route::get('/', 'PagesController@homepage');
 Route::get('/login', 'PagesController@login');
 
 Route::resource('articles', 'ArticlesController');

@@ -12,7 +12,7 @@ class ArticlesController extends Controller
   {
     $articles = article::all();
 
-    return view('welcome', [
+    return view('articles.index', [
       'articles'=>$articles
     ]);
   }
