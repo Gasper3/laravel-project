@@ -15,3 +15,8 @@ Route::get('/', 'PagesController@homepage');
 Route::get('/login', 'PagesController@login');
 
 Route::resource('articles', 'ArticlesController');
+Route::post('/articles/{article}/comments', 'ArticleCommentsController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

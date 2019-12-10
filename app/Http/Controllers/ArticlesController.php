@@ -24,7 +24,12 @@ class ArticlesController extends Controller
 
   public function store()
   {
-    Article::create(request(['headline', 'content', 'author']));
+    $attributes = request()->validate([
+      'headline' => 'required',
+      'content' => 'required',
+      'author' => 'required',
+    ]);
+    Article::create($attributes);
     return redirect('/articles');
   }
 

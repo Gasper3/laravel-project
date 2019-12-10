@@ -11384,3 +11384,7 @@ a.text-dark:focus {
   margin-bottom: 0.5rem;
 }
 
+.error {
+  border: 1px solid red;
+}
+
