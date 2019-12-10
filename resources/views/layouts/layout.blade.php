@@ -13,9 +13,9 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link @yield('active', 'notactive')" href="/">Home</a>
-            <a class="nav-item nav-link @yield('active', 'notactive')" href="/articles">Articles</a>
-            <a class="nav-item nav-link @yield('active', 'notactive')" href="/login">Sign in</a>
+            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" href="/articles">Articles</a>
+            <a class="nav-item nav-link" href="/login">Sign in</a>
           </div>
         </div>
       </nav>

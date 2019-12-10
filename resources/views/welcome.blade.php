@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 @section('title')
 @section('active', 'active')
 @section('content')
@@ -10,9 +10,11 @@
     <div class="col-3">
       <img src="https://via.placeholder.com/100" />
     </div>
-    <div class="col-9 d-flex justify-content-center align-items-center">
-      <h3>{{$article->headline}}</h3>
-    </div>
+    <a href="/articles/{{$article->id}}">
+      <div class="col-9 d-flex justify-content-center align-items-center">
+        <h3>{{$article->headline}}</h3>
+      </div>
+    </a>
   </div>
 </div>
 @endforeach
