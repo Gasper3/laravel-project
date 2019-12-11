@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\article;
-
+use File;
 
 class ArticlesController extends Controller
 {
@@ -19,7 +19,6 @@ class ArticlesController extends Controller
 
   public function create()
   {
-    
     return view('articles.create');
   }
 

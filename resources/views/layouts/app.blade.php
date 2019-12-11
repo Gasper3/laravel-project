@@ -34,7 +34,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                             <a class="nav-item nav-link" href="/articles">Articles</a>
-
+                            @if(Auth::check())
+                            <a class="nav-item nav-link" href="/articles/create">Create Article</a>
+                            @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->

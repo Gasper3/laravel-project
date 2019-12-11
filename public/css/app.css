@@ -11388,3 +11388,22 @@ a.text-dark:focus {
   border: 1px solid red;
 }
 
+.comment {
+  margin-top: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.comment-content {
+  border-right: 1px solid lightgray;
+}
+
+.article-content {
+  border-bottom: 1px solid lightgray;
+}
+
+.article-img {
+  width: 200px;
+}
+

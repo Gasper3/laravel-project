@@ -8,13 +8,13 @@
 <div class="article-container">
   <div class="row">
     <div class="col-3">
-      <img src="https://via.placeholder.com/100" />
+      <img src="https://picsum.photos/100" />
     </div>
-    <a href="/articles/{{$article->id}}">
-      <div class="col-9 d-flex justify-content-center align-items-center">
-        <h3>{{$article->headline}}</h3>
-      </div>
-    </a>
+    <div class="col-9 d-flex justify-content-center align-items-center">
+      <a href="/articles/{{$article->id}}">
+          <h3>{{$article->headline}}</h3>
+      </a>
+    </div>
   </div>
 </div>
 @endforeach
