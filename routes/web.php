@@ -17,6 +17,7 @@ Route::get('/', 'PagesController@homepage');
 Route::resource('articles', 'ArticlesController');
 Route::post('/articles/{article}/comments', 'ArticleCommentsController@store');
 
+Route::get('/users/{user}/reset', 'PasswordController@passwordReset');
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

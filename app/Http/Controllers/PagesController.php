@@ -20,9 +20,5 @@ class PagesController extends Controller
       return view('login');
     }
 
-    public function passwordReset($value='')
-    {
-      
-    }
 
 }
